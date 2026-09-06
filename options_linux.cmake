@@ -24,6 +24,7 @@ INTERFACE
     -Wno-array-bounds
     -Wno-free-nonheap-object
     -Wno-stringop-overflow
+    -Wno-restrict # glibc + _FORTIFY_SOURCE + GCC 15 false positives
 )
 
 target_link_options_if_exists(common_options
