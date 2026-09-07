@@ -25,6 +25,7 @@ INTERFACE
     -Wno-free-nonheap-object
     -Wno-stringop-overflow
     -Wno-restrict # glibc + _FORTIFY_SOURCE + GCC 15 false positives
+    -Wno-aggressive-loop-optimizations # GCC 15 false positive in std::distance loops
 )
 
 target_link_options_if_exists(common_options
