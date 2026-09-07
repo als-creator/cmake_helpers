@@ -26,6 +26,7 @@ INTERFACE
     -Wno-stringop-overflow
     -Wno-restrict # glibc + _FORTIFY_SOURCE + GCC 15 false positives
     -Wno-aggressive-loop-optimizations # GCC 15 false positive in std::distance loops
+    -Wno-dangling-pointer # GCC 15 false positive with rpl consumer lambdas
 )
 
 target_link_options_if_exists(common_options
